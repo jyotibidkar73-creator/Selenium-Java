@@ -1,0 +1,63 @@
+DAY 17
+----------
+
+Wrapper classes
+---------------
+Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+
+
+String s ="welcome"
+String s = new String("welcome");
+
+int x =100;
+int x = new int(10)/we can't use
+Integer x = new Integer(10)
+
+int ----Integer
+float ---float
+double ---Double
+char-----Character
+boolean----Boolean
+
+
+Scenario 1--String-->int,double,boolean,char
+Scenario 2-- int,double,boolean,char------>String
+
+1)String ---> int         Integer.parseInt(String Value)
+2)String--->double        Double.parseDouble(String Value)
+3)String--->boolean       Boolean.parseBoolean(String Value)
+4)String-->char           Not possible
+
+
+Any data type ---->string
+string.valueOf()-----convert all premitive data types into string format
+
+
+***Packages & Access Modifiers
+
+A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code. Packages are divided into two categories:
+
+Built-in Packages (packages from the Java API)
+User-defined Packages (create your own packages)
+
+-----import java.util.*;
+
+----To create a package, use the package keyword:e.g (package packagname)
+
+
+Access modifiers---define scope of variables & methods
+1)public The code is accessible for all classes
+2)protected--only inheritance(same package and subclasses)
+3)default--- we need not to specfy the "default" word and we can access within the package.
+4)private -within the class 
+
+Access Modifiers - controls the access level
+Non-Access Modifiers - do not control access level, but provides other functionality
+
+
+
+
+
+
+
+
