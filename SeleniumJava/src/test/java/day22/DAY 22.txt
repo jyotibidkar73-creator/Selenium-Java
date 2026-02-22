@@ -1,0 +1,73 @@
+DAY 22
+----------
+
+driver.manage().window().maximize() is used to open the browser in full-screen mode to ensure all web elements are visible and tests run consistently.
+
+Locators
+----------
+Locators are used to identify and find the web elements(like text boxes,link,dropdowns)on a webpage so that automation scripts can interact with them.
+
+Think of a locator as an address of an element on the page.
+
+✅ Types of Locators in Selenium
+1️.ID
+  Finds element using id attribute
+  Fastest and most reliable (if unique)
+  driver.findElement(By.id("username"));
+
+2.Name
+  Uses name attribute
+  driver.findElement(By.name("email"));
+
+3.Link Text
+   For links only (<a> tag)
+   Matches exact visible text
+   driver.findElement(By.linkText("Login"));
+
+4.Partial Link Text
+   Matches part of the link text
+   driver.findElement(By.partialLinkText("Log"));
+
+5.Class Name
+    Uses class attribute
+    driver.findElement(By.className("login-btn"));
+
+6.Tag Name
+  Uses HTML tag name
+  driver.findElement(By.tagName("input"));
+
+
+****findElement()****
+
+Returns single WebElement
+Finds first matching element
+Throws NoSuchElementException if not found
+
+Example:
+WebElement e = driver.findElement(By.id("username"));
+e.sendKeys("Jyoti");
+
+****findElements()****
+Returns List<WebElement>
+Finds all matching elements
+Returns empty list if not found (no exception)
+
+
+
+Difference Between findElement and findElements
+Point	                   findElement()	                              findElements()
+Return type	        Returns single WebElement	                Returns List<WebElement>
+Match count	        Returns first matching element only	        Returns all matching elements
+When element not found	Throws NoSuchElementException	                Returns empty list (no exception)Returns
+Use case	         When you expect only one element	        When you expect multiple elements
+Failure behavior	Test may fail immediately	                 Test continues (list size = 0)
+Performance	       Slightly faster (single lookup)	                 May take more time (collects all matches)
+Example  	       driver.findElement(By.id("user"))	         driver.findElements(By.tagName("a"))
+
+
+Assignment
+Open the application "https://www.demoblaze.com/index.html"
+
+1)Total numbers of link
+2)Total numbers of imag
+3)Click on any prouct link using linktext/partial linktext
