@@ -1,0 +1,28 @@
+DAY 21
+
+What is selenuium webdriver?
+-----------------------------
+
+1)Webdriver is one of the component in selenium
+2)WebDriver is a Java interface
+3)WebDriver is an API(Application program interface)
+
+
+WebDriver (I) -RemoteWebDriver (C) -ChromeDriver,FirefoxDriver,EdgeDriver etc...
+
+Environment setup(selnuium web driver jar file)
+-------------------
+1)Downloading jars files and attaching them to java project(Manually)
+------------------------
+-->Created new java project
+--> downloaded webdriver jars(.zip) and extracted
+--->attach jars to java project
+
+2)Creating Maven project
+--->created new maven project
+---->added webdriver dependency in pom.xml(selnium java)
+
+Pom.xml -dependencies
+https://mvnrepository.com
+webdriver dependency link ---> https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+
