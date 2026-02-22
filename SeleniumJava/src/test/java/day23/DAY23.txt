@@ -1,0 +1,12 @@
+CSS SELECTOR(Customized selector)
+--------------
+CSS Selectors are used to locate elements on a web page using style-sheet patterns. In automation, they are often faster and shorter than XPath.
+
+Css - Cascading Style sheets
+tag id  - tag#id
+tag class - tag.classname
+tag attribute - tag[attribute ="value"]
+tag id,class,attribute tag.classname[attribute ="value"]
+
+
+//Selector hub extension
